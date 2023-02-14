@@ -1,6 +1,0 @@
-submitit INFO (2022-05-31 11:28:05,357) - Starting with JobEnvironment(job_id=1305433, hostname=devfair0257, local_rank=0(1), node=0(1), global_rank=0(1))
-submitit INFO (2022-05-31 11:28:05,357) - Loading pickle: /private/home/haoranxu/fairseq-py/flores2_x_en.32k/executor_logs/1305433_submitted.pkl
-[Parallel(n_jobs=8)]: Using backend LokyBackend with 8 concurrent workers.
-[Parallel(n_jobs=8)]: Done   1 tasks      | elapsed:   36.7s
-[Parallel(n_jobs=8)]: Done   1 out of   1 | elapsed:   36.8s finished
-submitit INFO (2022-05-31 11:28:57,112) - Job completed successfully

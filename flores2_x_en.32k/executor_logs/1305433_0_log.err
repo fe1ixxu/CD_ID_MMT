@@ -1,3 +1,0 @@
-clean-corpus.perl: processing flores2_x_en.32k/tmp/encoded_train/shard000/spm.train.shard000.hau-eng.hau & .eng to flores2_x_en.32k/tmp/encoded_filtered_train/shard000/spm_length_filtered.hau-eng, cutoff 1-250, ratio 3
-..........(100000)......
-Input sentences: 164730  Output sentences:  164293
