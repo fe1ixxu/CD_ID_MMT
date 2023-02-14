@@ -1,0 +1,137 @@
+train_corpora:
+  hau-eng:
+    values:
+      paracrawl_v8:
+        s3_paths:
+          source: N/A
+          target: N/A
+          num_lines: null
+          is_gzip: false
+        local_paths:
+          source: /large_experiments/nllb/mmt/data/bitexts/wmt/en-ha/paracrawl_v8.en-ha.ha
+          target: /large_experiments/nllb/mmt/data/bitexts/wmt/en-ha/paracrawl_v8.en-ha.en
+          num_lines: null
+          is_gzip: false
+      khamenei:
+        s3_paths:
+          source: N/A
+          target: N/A
+          num_lines: null
+          is_gzip: false
+        local_paths:
+          source: /large_experiments/nllb/mmt/data/bitexts/wmt/en-ha/khamenei.en-ha.ha
+          target: /large_experiments/nllb/mmt/data/bitexts/wmt/en-ha/khamenei.en-ha.en
+          num_lines: null
+          is_gzip: false
+  ibo-eng:
+    values:
+      mini_mine.v1:
+        s3_paths:
+          source: N/A
+          target: N/A
+          num_lines: null
+          is_gzip: false
+        local_paths:
+          source: /large_experiments/nllb/mmt/data/bitexts/mini_mine.v1/threshold_1_06/train.ibo-eng.ibo
+          target: /large_experiments/nllb/mmt/data/bitexts/mini_mine.v1/threshold_1_06/train.ibo-eng.eng
+          num_lines: null
+          is_gzip: false
+secondary_train_corpora: null
+valid_corpora:
+  hau-eng:
+    values:
+      flores_dev:
+        s3_paths:
+          source: N/A
+          target: N/A
+          num_lines: null
+          is_gzip: false
+        local_paths:
+          source: /large_experiments/nllb/mmt/flores101/dev/hau.dev
+          target: /large_experiments/nllb/mmt/flores101/dev/eng.dev
+          num_lines: null
+          is_gzip: false
+  ibo-eng:
+    values:
+      flores_dev:
+        s3_paths:
+          source: N/A
+          target: N/A
+          num_lines: null
+          is_gzip: false
+        local_paths:
+          source: /large_experiments/nllb/mmt/flores101/dev/ibo.dev
+          target: /large_experiments/nllb/mmt/flores101/dev/eng.dev
+          num_lines: null
+          is_gzip: false
+test_corpora:
+  hau-eng:
+    values:
+      flores_devtest:
+        s3_paths:
+          source: N/A
+          target: N/A
+          num_lines: null
+          is_gzip: false
+        local_paths:
+          source: /large_experiments/nllb/mmt/flores101/devtest/hau.devtest
+          target: /large_experiments/nllb/mmt/flores101/devtest/eng.devtest
+          num_lines: null
+          is_gzip: false
+  ibo-eng:
+    values:
+      flores_devtest:
+        s3_paths:
+          source: N/A
+          target: N/A
+          num_lines: null
+          is_gzip: false
+        local_paths:
+          source: /large_experiments/nllb/mmt/flores101/devtest/ibo.devtest
+          target: /large_experiments/nllb/mmt/flores101/devtest/eng.devtest
+          num_lines: null
+          is_gzip: false
+source_vocab_config:
+  pretrained: null
+  vocab_build_params:
+    vocab_size: 32000
+    use_joined_data: true
+    model_type: bpe
+    sampled_data_size: 1000000
+    sampling_temperature: 2.0
+    character_coverage: 0.99995
+    shuffle_input_sentence: true
+    random_seed: 0
+target_vocab_config:
+  pretrained: null
+  vocab_build_params:
+    vocab_size: 32000
+    use_joined_data: true
+    model_type: bpe
+    sampled_data_size: 1000000
+    sampling_temperature: 2.0
+    character_coverage: 0.99995
+    shuffle_input_sentence: true
+    random_seed: 0
+binarization_config:
+  max_examples_per_shard: 30000000
+  smallest_shard: 250000
+  binarize_workers: 60
+  random_seed: 0
+executor_config:
+  log_folder: executor_logs
+  cluster: local
+  slurm_partition: null
+preprocessing_config:
+  sample_size: null
+  max_tokens: null
+  moses_config:
+    script_directory: examples/nllb/modeling/preprocessing/moses
+    lowercase: false
+    normalize_punctuation: true
+    remove_non_printing_chars: false
+    deescape_special_chars: false
+  preprocess_source: true
+  preprocess_target: true
+  tag_secondary_data: true
+

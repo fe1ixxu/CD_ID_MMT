@@ -1,0 +1,3 @@
+submitit INFO (2022-05-31 11:26:58,935) - Starting with JobEnvironment(job_id=1305179, hostname=devfair0257, local_rank=0(1), node=0(1), global_rank=0(1))
+submitit INFO (2022-05-31 11:26:58,935) - Loading pickle: /private/home/haoranxu/fairseq-py/flores2_x_en.32k/executor_logs/1305179_submitted.pkl
+submitit INFO (2022-05-31 11:27:12,970) - Job completed successfully

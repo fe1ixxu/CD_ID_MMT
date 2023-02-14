@@ -1,0 +1,25 @@
+defaults:
+  - cluster: azure
+  - lang_config: flores200.ablation
+  - launcher: submitit
+  - _self_
+
+fairseq_root: ???
+model_folder: ???
+
+model_type: dense
+direction: all
+eval_on: all
+checkpoints:
+  - checkpoint_best
+lang_pairs_per_job: 1
+gen_splits:
+  - valid
+#  - test
+data: ${cluster.data_dir}/${lang_config.bin_root}/data_bin/shard000
+spm_model: ${cluster.data_dir}/${lang_config.bin_root}/vocab_bin/sentencepiece.source.256000.model
+encoder_langtok: tgt
+output_dir: ${model_folder}
+beam_size: 4
+fp16: true
+metrics_only: false
