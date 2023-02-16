@@ -1,4 +1,4 @@
-This is the repo for the intern project [Language-Aware Multilingual Machine Translation with Self-Supervised Learning](https://fb.workplace.com/groups/831302610278251/permalink/8170600219681750)
+This is the repo for our EACL paper [Language-Aware Multilingual Machine Translation with Self-Supervised Learning](https://arxiv.org/pdf/2302.05008.pdf)
 
 ## Building Virtual Environment:
 ```
