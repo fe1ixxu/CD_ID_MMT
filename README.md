@@ -8,6 +8,14 @@ pip install -e ./
 pip install -r requirements.txt
 ```
 
+## Download M8 and M15 Dataset
+
+```
+pip install gdown
+gdown https://drive.google.com/uc?id=1FvEfSFfJc3c_jP-6f6MaexKZdzTE8Ok3
+```
+All preprocessed and raw parallel dataset and monolingual dataset are included.
+
 ## Training
 
 Train a model with CD+ID on M8 xxx->eng:
